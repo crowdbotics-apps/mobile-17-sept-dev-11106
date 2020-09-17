@@ -16,6 +16,24 @@ export default function apiReducer(state = initialState, action) {
     case types.API_V1_CUSTOMTEXT_PARTIAL_UPDATE:
     case types.API_V1_CUSTOMTEXT_PARTIAL_UPDATE_SUCCEEDED:
     case types.API_V1_CUSTOMTEXT_PARTIAL_UPDATE_FAILED:
+    case types.API_V1_GFFJHGF_LIST:
+    case types.API_V1_GFFJHGF_LIST_SUCCEEDED:
+    case types.API_V1_GFFJHGF_LIST_FAILED:
+    case types.API_V1_GFFJHGF_CREATE:
+    case types.API_V1_GFFJHGF_CREATE_SUCCEEDED:
+    case types.API_V1_GFFJHGF_CREATE_FAILED:
+    case types.API_V1_GFFJHGF_READ:
+    case types.API_V1_GFFJHGF_READ_SUCCEEDED:
+    case types.API_V1_GFFJHGF_READ_FAILED:
+    case types.API_V1_GFFJHGF_UPDATE:
+    case types.API_V1_GFFJHGF_UPDATE_SUCCEEDED:
+    case types.API_V1_GFFJHGF_UPDATE_FAILED:
+    case types.API_V1_GFFJHGF_PARTIAL_UPDATE:
+    case types.API_V1_GFFJHGF_PARTIAL_UPDATE_SUCCEEDED:
+    case types.API_V1_GFFJHGF_PARTIAL_UPDATE_FAILED:
+    case types.API_V1_GFFJHGF_DELETE:
+    case types.API_V1_GFFJHGF_DELETE_SUCCEEDED:
+    case types.API_V1_GFFJHGF_DELETE_FAILED:
     case types.API_V1_HOMEPAGE_LIST:
     case types.API_V1_HOMEPAGE_LIST_SUCCEEDED:
     case types.API_V1_HOMEPAGE_LIST_FAILED:

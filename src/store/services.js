@@ -1,6 +1,6 @@
 import axios from "axios"
 const mobile17septAPI = axios.create({
-  baseURL: "https://mobile-17-sept-dev-11106.botics.co/",
+  baseURL: "https://mobile-17-sept-dev-11106-prod.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
@@ -14,6 +14,24 @@ function api_v1_customtext_update(requestBody) {
 }
 function api_v1_customtext_partial_update(requestBody) {
   return mobile17septAPI.patch(`/api/v1/customtext/{id}/`, requestBody)
+}
+function api_v1_gffjhgf_list() {
+  return mobile17septAPI.get(`/api/v1/gffjhgf/`)
+}
+function api_v1_gffjhgf_create(requestBody) {
+  return mobile17septAPI.post(`/api/v1/gffjhgf/`, requestBody)
+}
+function api_v1_gffjhgf_read() {
+  return mobile17septAPI.get(`/api/v1/gffjhgf/{id}/`)
+}
+function api_v1_gffjhgf_update(requestBody) {
+  return mobile17septAPI.put(`/api/v1/gffjhgf/{id}/`, requestBody)
+}
+function api_v1_gffjhgf_partial_update(requestBody) {
+  return mobile17septAPI.patch(`/api/v1/gffjhgf/{id}/`, requestBody)
+}
+function api_v1_gffjhgf_delete() {
+  return mobile17septAPI.delete(`/api/v1/gffjhgf/{id}/`)
 }
 function api_v1_homepage_list() {
   return mobile17septAPI.get(`/api/v1/homepage/`)
@@ -74,6 +92,12 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_gffjhgf_list,
+  api_v1_gffjhgf_create,
+  api_v1_gffjhgf_read,
+  api_v1_gffjhgf_update,
+  api_v1_gffjhgf_partial_update,
+  api_v1_gffjhgf_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
