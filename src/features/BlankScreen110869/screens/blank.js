@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { CheckBox_3: true, Radio_4: true }
+  state = { CheckBox_3: true, Radio_4: true, Toggle_7: true, Toggle_8: false }
 
   render = () => (
     <View
@@ -225,7 +225,7 @@ export class _Blank extends React.Component {
           borderBottomWidth: 0,
           borderRadius: 0,
           fontSize: 20,
-          color: "#000000",
+          color: "#33dd1d",
           backgroundColor: "#ffffff",
           fontFamily: "Roboto-Regular",
           textAlign: "left",
@@ -236,20 +236,22 @@ export class _Blank extends React.Component {
           letterSpacing: 0
         }}
       />
-      <Image
-        resizeMode="cover"
+      <Toggle
+        text="switch ON/OFF"
+        activeColor="#b98346"
+        inactiveColor="#C0CCDA"
+        disabled={false}
         style={{
-          width: "100%",
-          height: 200,
           marginLeft: 0,
           marginRight: 0,
-          marginTop: 0,
-          marginBottom: 0,
-          paddingLeft: 0,
-          paddingRight: 0,
-          paddingTop: 0,
-          paddingBottom: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
           overflow: "visible",
+          alignSelf: "center",
           borderColor: "#000000",
           borderStyle: "solid",
           borderWidth: 0,
@@ -257,8 +259,50 @@ export class _Blank extends React.Component {
           borderRightWidth: 0,
           borderTopWidth: 0,
           borderBottomWidth: 0,
-          borderRadius: 0
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
         }}
+        checked={this.state.Toggle_7}
+        onChange={nextChecked => this.setState({ Toggle_7: nextChecked })}
+      />
+      <Toggle
+        text="switch ON/OFF"
+        activeColor="#b98346"
+        inactiveColor="#66eadb"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          alignSelf: "center",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        checked={this.state.Toggle_8}
+        onChange={nextChecked => this.setState({ Toggle_8: nextChecked })}
       />
     </View>
   )
