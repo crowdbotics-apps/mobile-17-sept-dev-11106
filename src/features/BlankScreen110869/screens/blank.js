@@ -304,6 +304,42 @@ export class _Blank extends React.Component {
         checked={this.state.Toggle_8}
         onChange={nextChecked => this.setState({ Toggle_8: nextChecked })}
       />
+      <Icon
+        iconFont="Eva Design Icons"
+        name="alert-triangle"
+        height={40}
+        width={40}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          alignSelf: "center",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          fontSize: 40,
+          color: "#f10e0e",
+          backgroundColor: "#fcfcfc",
+          fontFamily: "Roboto-Regular",
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "line-through",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+      />
     </View>
   )
 }
