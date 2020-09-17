@@ -7,8 +7,9 @@ from django.db import models
 
 
 class CustomText(models.Model):
-    title = models.CharField(
+    ghfhfh = models.CharField(
         max_length=150,
+        blank=True,
     )
 
     def __str__(self):
@@ -33,3 +34,15 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Gffjhgf(models.Model):
+    "Generated Model"
+    jhgfjhg = models.BigIntegerField()
+    fhgfhgf = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="gffjhgf_fhgfhgf",
+    )
