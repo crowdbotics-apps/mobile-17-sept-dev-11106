@@ -8,8 +8,8 @@ from django.db import models
 
 class CustomText(models.Model):
     ghfhfh = models.CharField(
-        max_length=150,
         blank=True,
+        max_length=150,
     )
 
     def __str__(self):
@@ -41,8 +41,8 @@ class Gffjhgf(models.Model):
     jhgfjhg = models.BigIntegerField()
     fhgfhgf = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="gffjhgf_fhgfhgf",
     )

@@ -7,25 +7,42 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='customtext',
-            name='title',
+            model_name="customtext",
+            name="title",
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='ghfhfh',
+            model_name="customtext",
+            name="ghfhfh",
             field=models.CharField(blank=True, max_length=150),
         ),
         migrations.CreateModel(
-            name='Gffjhgf',
+            name="Gffjhgf",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('jhgfjhg', models.BigIntegerField()),
-                ('fhgfhgf', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='gffjhgf_fhgfhgf', to='home.CustomText')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("jhgfjhg", models.BigIntegerField()),
+                (
+                    "fhgfhgf",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="gffjhgf_fhgfhgf",
+                        to="home.CustomText",
+                    ),
+                ),
             ],
         ),
     ]
